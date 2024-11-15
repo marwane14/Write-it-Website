@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write IT!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Window Picture" class="header-image">
+        
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <label for="language">Language:</label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <h1 id="title" data-en="Welcome to Write IT!" data-fr="Bienvenue à Write IT!">Welcome to Your Game Name</h1>
+        <p id="subtitle" data-en="The Dysgraphia Helping Game " data-fr="Le jeu d'aide pour la dysgraphie">The Ultimate Gaming Experience</p>
+        <button onclick="scrollToSection('buy-now')" id="explore-btn" data-en="Explore Now" data-fr="Explorer Maintenant">Explore Now</button>
+    </header>
+
+    <section id="features">
+        <h2 id="features-title" data-en="Key Features" data-fr="Caractéristiques Principales">Key Features</h2>
+        <ul id="features-list">
+            <li data-en="Immersive Storyline" data-fr="Scénario Immersif">Immersive Storyline</li>
+            <li data-en="High-quality Graphics" data-fr="Graphismes de Haute Qualité">High-quality Graphics</li>
+            <li data-en="Multiplayer Mode" data-fr="Mode Multijoueur">Multiplayer Mode</li>
+            <li data-en="Regular Updates" data-fr="Mises à Jour Régulières">Regular Updates</li>
+        </ul>
+    </section>
+
+    <section id="gameplay">
+        <h2 id="gameplay-title" data-en="Trailer" data-fr="Trailer">Gameplay</h2>
+        <p id="gameplay-text" data-en="Discover exciting features and mechanics that will keep you engaged!" 
+           data-fr="Découvrez des fonctionnalités passionnantes et des mécaniques qui vous captiveront!">
+           Discover exciting features and mechanics that will keep you engaged!
+        </p>
+        <!-- YouTube Video Embed -->
+        <div class="video-container">
+            <iframe id="gameplay-video" width="560" height="315" src="https://www.youtube.com/embed/3zJOS_3fKAQ" 
+                    title="Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="buy-now">
+        <h2 id="buy-now-title" data-en="Get Your Copy" data-fr="Obtenez Votre Copie">Get Your Copy</h2>
+        <p id="buy-now-text" data-en="Ready to play? Buy it now!" data-fr="Prêt à jouer? Achetez-le maintenant!">
+            Ready to play? Buy it now!
+        </p>
+        <button onclick="buyNow()" id="buy-now-btn" data-en="Buy Now" data-fr="Acheter Maintenant">Buy Now</button>
+    </section>
+
+    <section id="github">
+        <h2 id="github-title" data-en="View the Source Code on GitHub" data-fr="Voir le Code Source sur GitHub">
+            View the Source Code on GitHub
+        </h2>
+        <p id="github-text" data-en="Explore the game’s open-source code on our GitHub page."
+           data-fr="Découvrez le code open-source du jeu sur notre page GitHub.">
+           Explore the game’s open-source code on our GitHub page.
+        </p>
+        <a href="https://github.com/marwane14/Write-it" target="_blank" id="github-btn" data-en="GitHub Repository" 
+           data-fr="Dépôt GitHub">GitHub Repository</a>
+    </section>
+
+    <!-- Footer with Copyright -->
+    <footer>
+        <p data-en="&copy; 2024 Write IT!. All rights reserved." 
+           data-fr="&copy; 2024 Write IT!. Tous droits réservés.">&copy; 2023 Your Game Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
